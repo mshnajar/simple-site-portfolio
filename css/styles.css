@@ -1,7 +1,5 @@
-/*
-    COLOR PALETTE
-    https://coolors.co/274060-335c81-ebf4ff-1b2845-97bfed
-*/
+/* Global styles
+------------------------------------*/
 
 :root {
     --extreme-dark-color:   #1B2845;
@@ -11,11 +9,9 @@
     --extreme-light-color:  #EBF4FF;
 } 
 
-body main .body-context {
-    height: 400px;
-    font-size: 18px;
-    background-color: var(--light-color);
-}
+
+/* Header styles
+------------------------------------*/
 
 header {
     text-align: center;
@@ -24,6 +20,20 @@ header {
     color: var(--extreme-light-color);  
     background-color: var(--medium-color);
 }
+
+
+/* Body styles
+------------------------------------*/
+
+body main .body-context {
+    height: 400px;
+    font-size: 18px;
+    background-color: var(--light-color);
+}
+
+
+/* Footer styles
+------------------------------------*/
 
 footer {
     text-align: center;

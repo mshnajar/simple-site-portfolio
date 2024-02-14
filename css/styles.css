@@ -1,31 +1,34 @@
 /*
-COLOR PALETTE
-https://coolors.co/305252-b6d7b9-593d3b-92b4f4-ffe3e3
-#305252 - dark slate gray
-#B6D7B9 - celadon
-#593D3B - rose ebony
-#92B4F4 - jordy blue
-#FFE3E3 - mistly rose
+    COLOR PALETTE
+    https://coolors.co/274060-335c81-ebf4ff-1b2845-97bfed
 */
 
-
+:root {
+    --extreme-dark-color:   #1B2845;
+    --dark-color:           #274060;
+    --medium-color:         #335C81;
+    --light-color:          #97BFED;
+    --extreme-light-color:  #EBF4FF;
+} 
 
 body main .body-context {
     height: 400px;
     font-size: 18px;
-    background-color: #f3f7f7;
+    background-color: var(--light-color);
 }
 
 header {
     text-align: center;
     padding: 30px 0;
     font-size: 21px;
-    background-color: #dfe4e3;
+    color: var(--extreme-light-color);  
+    background-color: var(--medium-color);
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
     font-size: 11px;
-    background-color: dimgrey;
+    color: var(--extreme-light-color);
+    background-color: var(--extreme-dark-color);
 }

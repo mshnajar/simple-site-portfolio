@@ -1,0 +1,44 @@
+/* Global styles
+------------------------------------*/
+
+:root {
+    --extreme-dark-color:   #1B2845;
+    --dark-color:           #274060;
+    --medium-color:         #335C81;
+    --light-color:          #97BFED;
+    --extreme-light-color:  #EBF4FF;
+} 
+
+
+/* Header styles
+------------------------------------*/
+
+header {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 21px;
+    color: var(--extreme-light-color);  
+    background-color: var(--medium-color);
+}
+
+
+/* Body styles
+------------------------------------*/
+
+body main .body-context {
+    height: 400px;
+    font-size: 18px;
+    background-color: var(--light-color);
+}
+
+
+/* Footer styles
+------------------------------------*/
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 11px;
+    color: var(--extreme-light-color);
+    background-color: var(--extreme-dark-color);
+}

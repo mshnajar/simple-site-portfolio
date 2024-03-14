@@ -11,23 +11,6 @@
 
 body { margin: 0px; }
 
-.main-grid {
-    display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
-    background-color: var(--extreme-light-color);
-}
-
-.left-side-margin {
-    grid-row-start: 1;
-    grid-row-end: 4;
-}
-
-.right-side-margin {
-    grid-row-start: 1;
-    grid-row-end: 4;
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
 
 .main-grid .site-context {
     opacity: 0.90;

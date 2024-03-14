@@ -9,6 +9,12 @@
     --extreme-light-color:  #EBF4FF;
 } 
 
+body { margin: 0px; }
+
+
+.main-grid .site-context {
+    opacity: 0.90;
+}
 
 /* Header styles
 ------------------------------------*/
@@ -26,8 +32,9 @@ header {
 ------------------------------------*/
 
 body main .body-context {
-    height: 400px;
-    font-size: 18px;
+    height: 150vh;
+    text-align: center;
+    font-size: 21px;
     background-color: var(--light-color);
 }
 

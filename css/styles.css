@@ -4,7 +4,7 @@
 :root {
     --extreme-dark-color:   #1B2845;
     --dark-color:           #274060;
-    --medium-color:         #335C81;
+    --medium-color:         #3b81c1;
     --light-color:          #97BFED;
     --extreme-light-color:  #EBF4FF;
 } 
@@ -34,12 +34,12 @@ header h1, header h2 {
 }
 
 header h1 {
-    font-size: 100px;
-    line-height: 1.2;
+    font-size: 150px;
+    line-height: 1.1;
 }
 
 header h2 {
-    font-size: 40px;
+    font-size: 65px;
     padding-bottom: 20px;
 }
 

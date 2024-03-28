@@ -90,16 +90,59 @@ body main .body-main-context {
 .work-items-content h3 {
     font-weight: bold;
     font-size: 1.3rem;
+    padding: 15px 0;
+}
+
+.work-items-content h3:first-of-type {
     padding: 5px 0;
 }
 
-.work-items-content li:last-of-type {
+.work-items-content .row {
+    padding: 2px;
+}
+
+.work-items-content span {
+    color: #211f9d;
+}
+
+.work-items-content span:last-of-type {
     color: var(--medium-color);
 }
 
-.education-section {
+.work-items-content span:first-of-type {
+    color: unset;
+    padding-bottom: 3px;
+}
+
+
+.education-main-section {
     background-color: var(--light-color);
     padding-left: 0.5rem;
+}
+
+.education-main-section h1 {
+    padding: 1rem 0;
+}
+
+.education-items-wrap {
+    padding: 1rem;
+}
+
+.education-items-header h3:first-of-type {
+    font-weight: bold;
+}
+
+.education-items-header h3:last-of-type {
+    font-size: 1.2rem;
+}
+
+.education-items-header h3:last-of-type div {
+    font-size: 1rem;
+}
+
+.education-items-content span:last-of-type {
+    color: #211f9d;
+    font-weight: normal;
 }
 
 

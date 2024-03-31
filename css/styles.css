@@ -124,7 +124,8 @@ ul[data-show-value] a::after {
     font-size: 1rem;
 }
 
-/*  For different colors
+/*  For different colors */
+/*
 ul.skill-cloud li:nth-child(2n+1) a { --color: #181; }
 ul.skill-cloud li:nth-child(3n+1) a { --color: #33a; }
 ul.skill-cloud li:nth-child(4n+1) a { --color: #c38; }

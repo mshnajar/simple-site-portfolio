@@ -4,38 +4,247 @@
 :root {
     --extreme-dark-color:   #1B2845;
     --dark-color:           #274060;
-    --medium-color:         #335C81;
+    --medium-color:         #3b81c1;
     --light-color:          #97BFED;
     --extreme-light-color:  #EBF4FF;
+    --super-extreme-light-color:  #f6f7f8;
 } 
 
-body { margin: 0px; }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #434854;
+    /* background: url(../assets/Find_Good_Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
 
 
-.main-grid .site-context {
+.main-grid .body-context {
     opacity: 0.90;
 }
 
 /* Header styles
 ------------------------------------*/
 
+h1, h2, h3 {
+    font-family: "Dosis", cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
 header {
     text-align: center;
     padding: 30px 0;
-    font-size: 21px;
-    color: var(--extreme-light-color);  
+    font-size: 18px;
+    /* color: var(--extreme-light-color);   */
     background-color: var(--medium-color);
+}
+
+header h1, header h2 {
+    font-family: 'Caveat', cursive;
+}
+
+header h1 {
+    font-size: 150px;
+    line-height: 1.1;
+}
+
+header h2 {
+    font-size: 65px;
+    padding-bottom: 20px;
 }
 
 
 /* Body styles
 ------------------------------------*/
 
-body main .body-context {
-    height: 150vh;
-    text-align: center;
-    font-size: 21px;
+body main .body-main-context {
+    font-size: 18px;
+}
+
+
+/* Skill section styles */
+
+.skill-main-section {
+    background-color: var(--super-extreme-light-color);
+    padding-left: 0.5rem;
+    margin: 0;
+}
+
+.skill-items-header {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+.skill-items-content {
+    height: 300px;
+}
+
+ul.skill-cloud {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.75rem;
+    width: 450px;
+}
+  
+ul.skill-cloud a {
+    --size: 4;
+    --color: rgb(51, 101, 170);
+    color: var(--color);
+    font-size: calc(var(--size) * 0.25rem + 0.5rem);
+    display: block;
+    padding: 0.225rem 0.25rem;
+    position: relative;
+    text-decoration: none;
+    /*  For different tones of a single color */
+    opacity: calc((15 - (9 - var(--size))) / 15); 
+}
+  
+ul.skill-cloud a[data-weight="1"] { --size: 1; }
+ul.skill-cloud a[data-weight="2"] { --size: 2; }
+ul.skill-cloud a[data-weight="3"] { --size: 3; }
+ul.skill-cloud a[data-weight="4"] { --size: 4; }
+ul.skill-cloud a[data-weight="5"] { --size: 6; }
+ul.skill-cloud a[data-weight="6"] { --size: 8; }
+ul.skill-cloud a[data-weight="7"] { --size: 10; }
+ul.skill-cloud a[data-weight="8"] { --size: 13; }
+ul.skill-cloud a[data-weight="9"] { --size: 16; }
+
+ul[data-show-value] a::after {
+    content: " (" attr(data-weight) ")";
+    font-size: 1rem;
+}
+
+/*  For different colors */
+/*
+ul.skill-cloud li:nth-child(2n+1) a { --color: #181; }
+ul.skill-cloud li:nth-child(3n+1) a { --color: #33a; }
+ul.skill-cloud li:nth-child(4n+1) a { --color: #c38; }
+*/
+  
+ul.skill-cloud a:focus {
+    outline: 1px dashed;
+}
+  
+ul.skill-cloud a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background: var(--color);
+    transform: translate(-50%, 0);
+    opacity: 0.15;
+    transition: width 0.25s;
+}
+  
+ul.skill-cloud a:focus::before,
+ul.skill-cloud a:hover::before {
+    width: 100%;
+}
+  
+@media (prefers-reduced-motion) {
+    ul.skill-cloud * {
+      transition: none !important;
+    }
+}
+
+
+/* Work section styles */
+
+.work-main-section {
+    background-color: var(--extreme-light-color);
+    padding-left: 0.5rem;
+}
+
+.work-main-section h1 {
+    padding: 1rem 0;
+}
+
+.work-items-wrap {
+    padding: 1rem;
+}
+
+.work-items-header h3:first-of-type {
+    font-weight: bold;
+}
+
+.work-items-header h3:last-of-type {
+    font-size: 1.2rem;
+}
+
+.work-items-header h3:last-of-type div {
+    font-size: 1rem;
+}
+
+.work-items-content h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 15px 0;
+}
+
+.work-items-content h3:first-of-type {
+    padding: 5px 0;
+}
+
+.work-items-content .row {
+    padding: 2px;
+}
+
+.work-items-content span {
+    color: #211f9d;
+}
+
+.work-items-content span:last-of-type {
+    color: var(--medium-color);
+}
+
+.work-items-content span:first-of-type {
+    color: unset;
+    padding-bottom: 3px;
+}
+
+
+/* Education section styles */
+
+.education-main-section {
     background-color: var(--light-color);
+    padding-left: 0.5rem;
+}
+
+.education-main-section h1 {
+    padding: 1rem 0;
+}
+
+.education-items-wrap {
+    padding: 1rem;
+}
+
+.education-items-header h3:first-of-type {
+    font-weight: bold;
+}
+
+.education-items-header h3:last-of-type {
+    font-size: 1.2rem;
+}
+
+.education-items-header h3:last-of-type div {
+    font-size: 1rem;
+}
+
+.education-items-content span:last-of-type {
+    color: #211f9d;
+    font-weight: normal;
 }
 
 
@@ -45,7 +254,27 @@ body main .body-context {
 footer {
     text-align: center;
     padding: 10px 0;
-    font-size: 11px;
+    font-size: 12px;
     color: var(--extreme-light-color);
     background-color: var(--extreme-dark-color);
+}
+
+/* .footer-context {
+    margin: 0 auto;
+} */
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-list li {
+    padding: 15px;
+    display: inline-block;
+}
+
+.contact-list li a {
+    font-size: 14px;
 }

@@ -24,10 +24,44 @@
 
                 <header>
                     <div>
+                        <nav>
+                            <ul class="navigation-menu">
+                                <li onmouseover="homeMenuEnter();" onmouseout="homeMenuOut();">
+                                    <a href="#">
+                                        <img id="menuImageID" src="assets/home-32.png" alt="home" title="home" width="18" height="18" class="menu-image">
+                                        Home
+                                    </a>
+                                </li>
+                                <li onmouseover="skillMenuEnter();" onmouseout="skillMenuOut();">
+                                    <a href="#skill-section">
+                                        <img id="menuSkillID" src="assets/puzzle-32.png" alt="skills" title="skills" width="18" height="18" class="menu-image">
+                                        Skills
+                                    </a>
+                                </li>
+                                <li onmouseover="workMenuEnter();" onmouseout="workMenuOut();">
+                                    <a href="#work-section">
+                                        <img id="menuWorkID" src="assets/business-32.png" alt="work" title="work" width="18" height="18" class="menu-image">
+                                        Work
+                                    </a>
+                                </li>
+                                <li onmouseover="educationMenuEnter();" onmouseout="educationMenuOut();">
+                                    <a href="#education-section">
+                                        <img id="menuEducationID" src="assets/book-32.png" alt="education" title="education" width="18" height="18" class="menu-image">
+                                        Education
+                                    </a>
+                                </li>                               
+                            </ul>
+                        </nav>
+
+                        <button onclick="backToTheTop()" id="topButton" title="Back to top of page">
+                            <i class="fa-regular fa-circle-up"></i>
+                            Top
+                        </button>
+
                         <img src="assets/code-development.svg" alt="code-dev" title="developing" class="profile-dev-photo">
                         <img src="assets/code-publish.svg" alt="code-publish" title="publishing" class="profile-ui-photo">
                         <h1>M.Sh.Najar</h1>
-                        <h2>Frontend Developer</h2>
+                        <h2>Frontend | Web Developer</h2>
                         <p>
                             <div>Started 15 years ago as a software developer, I continued my path as a web developer.</div> 
                             <div>For the past five years, I've been sharpening my skills in frontend development using Angular and Typescript.</div>
@@ -75,7 +109,7 @@
                 </header>
 
                 <main>
-                    <section class="row g-0 skill-main-section">
+                    <section id="skill-section" class="row g-0 skill-main-section">
                         <div class="col-lg-4 col-md-3 skill-items-header">
                             <h1>Skills</h1>
                         </div>
@@ -85,7 +119,7 @@
                         </div>
                     </section>
                     
-                    <section class="work-main-section" id="work">
+                    <section id="work-section" class="work-main-section" id="work">
                         <h1>Work Experience</h1>
 
                         <section class="row g-0 work-items-wrap">
@@ -236,7 +270,7 @@
                         </section>
                     </section>
                     
-                    <section class="education-main-section">
+                    <section id="education-section" class="education-main-section">
                         <h1>Education</h1>
 
                         <section class="row g-0 education-items-wrap">
@@ -318,6 +352,7 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="tag-cloud.js"></script>
+    <script src="navigation-handler.js"></script>
     <!-- <script src="https://kit.fontawesome.com/945ae2c187.js" crossorigin="anonymous"></script> -->
   </body>
   

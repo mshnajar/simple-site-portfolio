@@ -8,6 +8,7 @@
     --light-color:          #97BFED;
     --extreme-light-color:  #EBF4FF;
     --super-extreme-light-color:  #f6f7f8;
+    --dark-lime:          rgb(27, 226, 27);
 } 
 
 html {
@@ -45,7 +46,11 @@ header {
     text-align: center;
     padding: 30px 0;
     font-size: 18px;
-    background-color: var(--medium-color);
+    background:
+        linear-gradient(var(--medium-color), transparent),
+        linear-gradient(to top left, var(--dark-lime), transparent),
+        linear-gradient(to top right, blue, transparent);
+    background-blend-mode: screen;
     min-height: 95vh;
 }
 
@@ -78,8 +83,6 @@ header {
 .menu-image {
     vertical-align: initial;
 }
-
-
 
 .profile-dev-photo {
     position: absolute;
@@ -125,7 +128,7 @@ header h1 {
     line-height: 1.1;
     padding-top: 4vh;
     animation-name: fontColorWhite_to_Default;
-    animation-duration: 1.1s;   
+    animation-duration: 0.9s;   
     animation-timing-function: ease-in-out;
     animation-delay: 0.8s;
 }
@@ -135,8 +138,8 @@ header h2 {
     padding-bottom: 20px;
     animation-name: fontColorWhite_to_Default;
     animation-duration: 0.9s;   
-    animation-timing-function: ease-in-out;        
-    animation-delay: 1.9s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.7s;
 }
 
 @keyframes fontColorWhite_to_Default
@@ -147,6 +150,71 @@ header h2 {
     100%    {color:unset;}
 }
 
+.header-content {
+    display: flex;
+    flex-flow: row;
+    justify-content:center
+}
+
+.header-content-wrap {
+    text-align: left;
+}
+
+.header-content-label {
+    color: unset;
+    animation-name: fontColorWhite_to_Default;
+    animation-duration: 3s;   
+    animation-delay: 2.3s;
+}
+
+.header-content-label-coding {
+    color: unset;
+    animation-name: fontDefault_to_Monospace;
+    animation-duration: 3s;   
+    animation-delay: 2.3s;
+    animation-fill-mode: forwards;
+}
+
+.header-content-label-artistic {
+    color: unset;
+    animation-name: fontDefault_to_Decorative;
+    animation-duration: 3s;   
+    animation-delay: 2.3s;
+    animation-fill-mode: forwards;
+}
+
+.header-content-label-emphasize {
+    color: unset;
+    animation-name: fontColorDefault_to_White;
+    animation-duration: 4s;   
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fontColorDefault_to_White
+{
+    0%      {color:unset;}
+    10%     {color:unset;}
+    75%     {color:white;}
+    100%    {color:white;}
+}
+
+@keyframes fontDefault_to_Decorative
+{
+    0%      {color:unset;}
+    10%     {color:unset;}
+    95%     {color:white;}
+    100%    {color:rgb(229, 67, 124);font-family: cursive ;}
+}
+
+@keyframes fontDefault_to_Monospace
+{
+    0%      {color:unset;}
+    10%     {color:unset;}
+    95%     {color:white;}
+    100%    {color: lime;font-family: 'Courier New', Courier, monospace ;}
+}
 
 /* Body main styles
 ------------------------------------*/
@@ -175,6 +243,11 @@ body main {
     color: white;
 }
 
+.section-header-photo {
+    position: relative;
+    right: 10px;
+}
+
 
 /* Skill section styles */
 
@@ -182,7 +255,7 @@ body main {
     background-color: var(--light-color);
     padding: 0 5rem;
     margin: 0;
-    min-height: 70vh;
+    min-height: 95vh;
 }
 
 .skill-items-header {
@@ -334,7 +407,7 @@ ul.skill-cloud a:hover::before {
 .education-main-section {
     background-color: var(--light-color);
     padding: 5vh 5rem;
-    min-height: 60vh;
+    min-height: 95vh;
 }
 
 .education-main-section h1 {

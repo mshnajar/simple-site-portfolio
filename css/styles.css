@@ -106,6 +106,10 @@ header {
     vertical-align: initial;
 }
 
+.project-menu-image {
+    margin-bottom: -2px;
+}
+
 .profile-dev-photo {
     position: absolute;
     top: 20vh;

@@ -20,6 +20,16 @@ function skillMenuOut() {
     imageElement.src='assets/puzzle-32.png'
 }
 
+function projectsMenuEnter() {
+    var imageElement = document.getElementById('menuProjectsID');
+    imageElement.src='assets/laptop-metrics-50-white.png';
+}
+
+function projectsMenuOut() {
+    var imageElement = document.getElementById('menuProjectsID');
+    imageElement.src='assets/laptop-metrics-50.png'
+}
+
 function workMenuEnter() {
     var imageElement = document.getElementById('menuWorkID');
     imageElement.src='assets/business-white-32.png';

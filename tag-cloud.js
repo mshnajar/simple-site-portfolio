@@ -21,7 +21,7 @@ skillTagDataList.forEach(tag => {
     const tagAnchorElement = document.createElement('a');
     tagAnchorElement.textContent = tag.name;
     tagAnchorElement.setAttribute('data-weight',tag.weight);
-    tagAnchorElement.setAttribute('href','#work-section');
+    tagAnchorElement.setAttribute('href','#projects-section');
     tagListElement.appendChild(tagAnchorElement);
     tagCloudContainer.appendChild(tagListElement);
 });

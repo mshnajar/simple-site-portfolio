@@ -5,10 +5,11 @@
     --extreme-dark-color:   #1B2845;
     --dark-color:           #274060;
     --medium-color:         #3b81c1;
+    --light-medium-color:   #3099f9;
     --light-color:          #97BFED;
     --extreme-light-color:  #EBF4FF;
     --super-extreme-light-color:  #f6f7f8;
-    --dark-lime:          rgb(27, 226, 27);
+    --dark-lime:          rgb(70 215 70);
 } 
 
 html {
@@ -37,6 +38,27 @@ h1, h2, h3 {
     font-weight: 400;
     margin: 0;
 }
+
+.image-frame {
+    width: 100%;
+    background-color: #fff;
+    box-shadow:
+        inset 0 0 50px #fff,      /* inner white */
+        inset 20px 0 80px rgb(85, 125, 195),   /* inner left magenta short */
+        inset -20px 0 80px rgb(135, 146, 197),  /* inner right cyan short */
+        inset 20px 0 300px rgb(85, 125, 195),  /* inner left magenta broad */
+        inset -20px 0 300px rgb(135, 146, 197), /* inner right cyan broad */
+        0 0 50px #fff,            /* outer white */
+        -10px 0 50px rgb(85, 125, 195),        /* outer left magenta */
+        10px 0 50px rgb(135, 146, 197);         /* outer right cyan */
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.image-frame-wrap {
+    text-align: center;
+} 
+
 
 
 /* Header styles
@@ -160,27 +182,11 @@ header h2 {
     text-align: left;
 }
 
-.header-content-label {
+.header-content-label-disapear {
     color: unset;
     animation-name: fontColorWhite_to_Default;
     animation-duration: 3s;   
     animation-delay: 2.3s;
-}
-
-.header-content-label-coding {
-    color: unset;
-    animation-name: fontDefault_to_Monospace;
-    animation-duration: 3s;   
-    animation-delay: 2.3s;
-    animation-fill-mode: forwards;
-}
-
-.header-content-label-artistic {
-    color: unset;
-    animation-name: fontDefault_to_Decorative;
-    animation-duration: 3s;   
-    animation-delay: 2.3s;
-    animation-fill-mode: forwards;
 }
 
 .header-content-label-emphasize {
@@ -188,6 +194,22 @@ header h2 {
     animation-name: fontColorDefault_to_White;
     animation-duration: 4s;   
     animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+}
+
+.header-content-label-coding {
+    color: unset;
+    animation-name: fontDefault_to_Monospace;
+    animation-duration: 5s;   
+    animation-delay: 3.2s;
+    animation-fill-mode: forwards;
+}
+
+.header-content-label-artistic {
+    color: unset;
+    animation-name: fontDefault_to_Decorative;
+    animation-duration: 5s;   
+    animation-delay: 3.2s;
     animation-fill-mode: forwards;
 }
 
@@ -204,7 +226,6 @@ header h2 {
 {
     0%      {color:unset;}
     10%     {color:unset;}
-    95%     {color:white;}
     100%    {color:rgb(229, 67, 124);font-family: cursive ;}
 }
 
@@ -212,7 +233,6 @@ header h2 {
 {
     0%      {color:unset;}
     10%     {color:unset;}
-    95%     {color:white;}
     100%    {color: lime;font-family: 'Courier New', Courier, monospace ;}
 }
 
@@ -346,6 +366,58 @@ ul.skill-cloud a:hover::before {
     }
 }
 
+
+/* Projects section styles */
+
+.projects-main-section {
+    background-color: var(--super-extreme-light-color);
+    padding: 5vh 5rem;
+}
+
+.projects-items-wrap {
+    padding: 3rem 1rem;
+}
+
+
+.projects-items-header, .projects-items-content {
+    padding-left: 4rem;
+}
+
+.projects-items-header {
+    display: flex;
+    flex-flow: column;
+    justify-content:center
+}
+
+.projects-items-header h3 {
+    font-size: 23px;
+    font-family: unset;
+    font-weight: bold;
+}
+
+.projects-items-header h3:first-of-type {
+    padding-top: 4rem;
+}
+
+.projects-items-content {
+    padding-top: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content:center;
+}
+
+.projects-items-content .row {
+    padding: 2px;
+}
+
+.projects-items-content span {
+    color: grey;
+}
+
+.projects-items-content span:last-of-type {
+    color: var(--light-medium-color);
+    padding-top: 5px;
+}
 
 /* Work section styles */
 

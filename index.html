@@ -66,12 +66,12 @@
                             <div class="header-content-wrap">
                                 <p>
                                     <div>
-                                        <!-- As a <label class="header-content-label">software developer</label>,  -->
+                                        <!-- As a <label class="header-content-label-disapear">software developer</label>,  -->
                                         I do <label class="header-content-label-coding">clean coding</label>, 
                                         specially on the <label class="header-content-label-emphasize">Frontend</label> side
                                     </div>
                                     <div>
-                                        now working with the <label class="header-content-label-emphasize">Angular</label> framework 
+                                        working with the <label class="header-content-label-emphasize">Angular</label> framework 
                                         + <label class="header-content-label-emphasize">Typescript/HTML/CSS</label>
                                     </div>
                                     <div>making <label class="header-content-label-artistic">nice & responsive</label> web apps</div>
@@ -124,7 +124,7 @@
                     <section id="skill-section" class="row g-0 skill-main-section">
                         <div class="col-lg-4 col-md-3 skill-items-header">
                             <h1>
-                                <!-- <img src="assets/puzzle-128.png" alt="code-dev" title="developing" class="section-header-photo" width="64" height="64"> -->
+                                <img src="assets/puzzle-128.png" alt="code-dev" title="developing" class="section-header-photo" width="64" height="64">
                                 Skills
                             </h1>
                         </div>
@@ -134,6 +134,65 @@
                         </div>
                     </section>
                     
+                    <section id="projects-section" class="projects-main-section">
+                        <h1>Projects</h1>
+
+                        <section class="row g-0 projects-items-wrap">
+                            <div class="col-6 image-frame-wrap">
+                                <div class="image-frame">
+                                    <a href="#myDashboardModal" data-bs-toggle="modal" data-bs-target="#myDashboardModal">
+                                        <img src="assets/Dashboard.png" alt="Dashboard" title="Dashboard" width="95%">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="projects-items-header">
+                                    <h3>Network Management System (NMS)</h3>
+                                </div>
+                                <div class="projects-items-content">
+                                    <div class="row g-0">
+                                        <span class="col-12">
+                                            Enterprise application for monitoring & controlling all sections of a VSAT network.
+                                            A rich-feature web app with different monitoring, dashboard, report & management pages.
+                                        </span>
+                                        <span class="col-12">
+                                            <i class="fa-solid fa-bars"></i>
+                                            Framework: Angular, UI Component: PrimeNG, Lang: Typescript
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="row g-0 projects-items-wrap">
+                            <div class="col-6 image-frame-wrap">
+                                <div class="image-frame">
+                                    <a href="#mySpectrumModal" data-bs-toggle="modal" data-bs-target="#mySpectrumModal">
+                                        <img src="assets/SpectrumRecorder.png" alt="SpectrumRecorder" title="SpectrumRecorder" width="95%">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="projects-items-header">
+                                    <h3>Spectrum Analyzer Online Monitoring</h3>
+                                    <h3>Spectrum Analyzer Offline Player </h3>
+                                </div>
+                                <div class="projects-items-content">
+                                    <div class="row g-0">
+                                        <span class="col-12">
+                                            <div>Online monitoring the live spectrum + Player which plays back past stored spectrum (Two in one products)</div>
+                                            Monitoring different RF signals in real time including many added value information and 
+                                            signal investigation and analyze by playing back older stored spectrum data plus measurement tools.
+                                        </span>
+                                        <span class="col-12">
+                                            <i class="fa-solid fa-bars"></i>
+                                            Framework: Angular, UI Component: PrimeNG, Chart: Highcharts
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+
                     <section id="work-section" class="work-main-section">
                         <h1>Work Experience</h1>
 
@@ -373,5 +432,25 @@
     <script src="navigation-handler.js"></script>
     <!-- <script src="https://kit.fontawesome.com/945ae2c187.js" crossorigin="anonymous"></script> -->
   </body>
+  
+  <div class="modal fade" id="mySpectrumModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content image-frame-wrap">
+        <div class="modal-body image-frame">
+          <img src="assets/SpectrumRecorder.png" alt="SpectrumRecorder" title="SpectrumRecorder" class="img-fluid" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myDashboardModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content image-frame-wrap">
+        <div class="modal-body image-frame">
+          <img src="assets/Dashboard.png" alt="Dashboard" title="Dashboard" class="img-fluid" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
   
 </html>

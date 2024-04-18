@@ -128,6 +128,16 @@ header {
     top: 21vh;
     left: 82%;
     width: 50%;
+    animation-name: ComeInside;
+    animation-duration: 1.5s;   
+    animation-timing-function: ease-in-out;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ComeInside
+{
+    100%    {left: 69%;}
 }
 
 header h1,

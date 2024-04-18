@@ -1,15 +1,15 @@
 const skillTagDataList = [
     { name: 'Nginx, npm, Nexus OSS', weight: 1 },
     { name: 'Highcharts', weight: 5 },
-    { name: 'Java', weight: 6 },
-    { name: 'SQL Server', weight: 4 },
-    { name: 'Angular', weight: 9 },
-    { name: 'Grid, FlexBox', weight: 6 },
-    { name: 'API, REST, WS, SSE', weight: 2 },
-    { name: 'HTML, CSS', weight: 8 },
     { name: 'JavaScript', weight: 3 },
-    { name: 'Typescript', weight: 7 },
     { name: 'GIT, SVN, Scrum', weight: 1 },
+    { name: 'Angular', weight: 9 },
+    { name: 'HTML, CSS', weight: 8 },
+    { name: 'Typescript', weight: 7 },
+    { name: 'Grid, FlexBox', weight: 4 },
+    { name: 'SQL Server', weight: 4 },
+    { name: 'Java', weight: 6 },
+    { name: 'API, REST, WS, SSE', weight: 2 },
     // Add more tags here...
 ];
 
@@ -21,7 +21,7 @@ skillTagDataList.forEach(tag => {
     const tagAnchorElement = document.createElement('a');
     tagAnchorElement.textContent = tag.name;
     tagAnchorElement.setAttribute('data-weight',tag.weight);
-    tagAnchorElement.setAttribute('href','');
+    tagAnchorElement.setAttribute('href','#projects-section');
     tagListElement.appendChild(tagAnchorElement);
     tagCloudContainer.appendChild(tagListElement);
 });

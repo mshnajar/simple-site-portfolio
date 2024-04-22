@@ -173,7 +173,7 @@ header {
     100%    {left: 69%;}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
     .profile-dev-photo {
         position: absolute;
         top: 48vh;
@@ -189,7 +189,7 @@ header {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
     .profile-dev-photo {
         position: absolute;
         top: 48vh;
@@ -561,7 +561,7 @@ ul.skill-cloud a:hover::before {
     padding: 3rem 1rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
     .projects-main-section {
         padding: 5vh 4rem;
     }
@@ -582,7 +582,7 @@ ul.skill-cloud a:hover::before {
     padding-left: 4rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
     .projects-items-header, 
     .projects-items-content {
         padding-left: 3rem;
@@ -629,12 +629,35 @@ ul.skill-cloud a:hover::before {
     background-color: var(--extreme-light-color);
 }
 
+@media screen and (max-width: 992px) {
+    .work-main-section {
+        padding: 5vh 4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .work-main-section {
+        font-size: 16px;
+    }
+    
+}
+
 .work-main-section h1 {
     padding: 1rem 0;
 }
 
 .work-items-wrap {
     padding: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+    .work-items-wrap {
+        padding: 1rem 0.2rem;
+    }
+}
+
+.work-items-header {
+    padding-right: 8px;
 }
 
 .work-items-header h3:first-of-type {
@@ -655,8 +678,34 @@ ul.skill-cloud a:hover::before {
     font-size: 1.3rem;
 }
 
+@media screen and (max-width: 992px) {
+    .work-items-header h3:first-of-type {
+        font-size: 1.4rem;
+    }
+    
+    .work-items-header h3:last-of-type {
+        font-size: 1rem;
+    }
+    
+    .work-items-header h3:last-of-type div {
+        font-size: 0.8rem;
+    }
+    .work-items-content h3 {
+        padding: 15px 0 5px 0;
+        font-size: 1.2rem;
+        text-decoration: underline;
+    }
+}
+
 .work-items-content h3:first-of-type {
     padding: 5px 0;
+}
+
+@media screen and (max-width: 992px) {
+    .work-items-content h3:first-of-type {
+        padding: 10px 0 5px 0;
+    }
+    
 }
 
 .work-items-content .row {

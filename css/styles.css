@@ -561,16 +561,38 @@ ul.skill-cloud a:hover::before {
     padding: 3rem 1rem;
 }
 
+@media screen and (max-width: 1000px) {
+    .projects-main-section {
+        padding: 5vh 4rem;
+    }
+    .projects-items-wrap {
+        padding: 3rem 0rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projects-main-section {
+        padding: 5vh 3rem;
+    }
+}
+
 
 .projects-items-header, 
 .projects-items-content {
     padding-left: 4rem;
 }
 
-.projects-items-header {
-    display: flex;
-    flex-flow: column;
-    justify-content:center
+@media screen and (max-width: 1000px) {
+    .projects-items-header, 
+    .projects-items-content {
+        padding-left: 3rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .projects-items-header, 
+    .projects-items-content {
+        padding-left: 2rem;
+    }
 }
 
 .projects-items-header h3 {
@@ -584,9 +606,6 @@ ul.skill-cloud a:hover::before {
 }
 
 .projects-items-content {
-    display: flex;
-    flex-flow: column;
-    justify-content:center;
     padding-top: 20px;
 }
 

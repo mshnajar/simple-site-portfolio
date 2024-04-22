@@ -405,6 +405,13 @@ body main {
     background-color: var(--light-color);
 }
 
+@media screen and (max-width: 720px) {
+    .skill-main-section {
+        padding: 0 1rem;
+    }    
+}
+
+
 .skill-items-header {
     display: flex;
     flex-direction: row;
@@ -416,6 +423,32 @@ body main {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .skill-items-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skill-items-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .skill-items-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skill-items-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
 }
 
 ul.skill-cloud {
@@ -442,6 +475,29 @@ ul.skill-cloud a {
     /*  For different tones of a single color */
     opacity: calc((15 - (9 - var(--size))) / 15); 
 }
+
+@media screen and (max-width: 720px) {
+    ul.skill-cloud {
+        line-height: 1.75rem;
+        width: 50%;
+    }
+    ul.skill-cloud a {
+        padding: 0.2rem 0.25rem;
+        font-size: calc(var(--size) * 0.15rem + 0.5rem);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    ul.skill-cloud {
+        line-height: 1.2rem;
+        width: 50%;
+    }
+    ul.skill-cloud a {
+        padding: 0. 5rem 0.25rem;
+        font-size: calc(var(--size) * 0.1rem + 0.5rem);
+    }
+}
+
   
 ul.skill-cloud a[data-weight="1"] { --size: 1; }
 ul.skill-cloud a[data-weight="2"] { --size: 2; }

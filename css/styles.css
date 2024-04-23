@@ -153,16 +153,16 @@ header {
 
 .profile-dev-photo {
     position: absolute;
-    top: 32vh;
+    top: 60vh;
     left: 5%;
-    width: 21%;
+    width: 19%;
 }
 
 .profile-ui-photo {
     position: relative;
-    top: 10vh;
-    left: 55%;
-    width: 50%;
+    top: 23vh;
+    left: 35%;
+    width: 28%;    
 }
 
 @media screen and (min-width: 1121px) {
@@ -170,17 +170,21 @@ header {
         animation-name: ComeInside;
         animation-duration: 1.5s;   
         animation-timing-function: ease-in-out;
-        animation-delay: 6s;
+        animation-delay: 5.5s;
         animation-fill-mode: forwards;
     }
 }
 
 @keyframes ComeInside
 {
-    100%    {left: 44%;}
+    100%    {
+        top: 10vh;
+        left: 55%;
+        width: 50%;
+    }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1120px) {
     .profile-dev-photo {
         position: absolute;
         top: 38vh;
@@ -189,10 +193,10 @@ header {
     }
     
     .profile-ui-photo {
-        position: absolute;
-        top: 38vh;
-        left: 82%;
-        width: 14%;
+        position: relative;
+        top: 36vh;
+        left: 37%;
+        width: 14%;  
     }
 }
 

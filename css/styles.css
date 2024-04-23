@@ -814,6 +814,15 @@ footer {
     background-color: var(--extreme-dark-color);
 }
 
+@media screen and (max-width: 992px) {
+    footer {
+        text-align: left;
+        justify-content: start;
+        padding: 5vh 4rem;
+    }
+}
+
+
 /* .footer-context {
     margin: 0 auto;
 } */
@@ -824,6 +833,22 @@ footer {
     width: 20%;
     opacity: 0.8;
     transition: 1s;
+}
+
+@media screen and (max-width: 1200px) {
+    .footer-profile-photo-wrapper {
+        left: 5%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .footer-profile-photo-wrapper {
+        left: 65%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .footer-profile-photo-wrapper {
+        display: none;
+    }
 }
 
 .footer-profile-photo-wrapper:hover {
@@ -850,8 +875,23 @@ footer {
 }
 
 .contact-list li {
-    padding: 15px;
+    padding: 1rem;
     display: inline-block;
+}
+
+@media screen and (max-width: 992px) {
+    .contact-list {
+        display: unset;
+    }
+    .contact-list li {
+        padding: 1rem 0;
+        display: block;
+    }
+    .contact-list li:first-of-type {
+        padding: 1rem 0;
+        padding-top: 2rem;
+        display: block;
+    }
 }
 
 .contact-list li a {

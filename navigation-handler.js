@@ -50,6 +50,16 @@ function educationMenuOut() {
     imageElement.src='assets/book-32.png'
 }
 
+function contactMenuEnter() {
+    var imageElement = document.getElementById('menuContactID');
+    imageElement.src='assets/phone-50-white.png';
+}
+
+function contactMenuOut() {
+    var imageElement = document.getElementById('menuContactID');
+    imageElement.src='assets/phone-50.png'
+}
+
 
 
 /* Top Button */

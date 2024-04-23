@@ -29,33 +29,39 @@
                                 <li onmouseover="homeMenuEnter();" onmouseout="homeMenuOut();">
                                     <a href="#">
                                         <img id="menuImageID" src="assets/home-32.png" alt="home" title="home" width="18" height="18" class="menu-image">
-                                        Home
+                                        <span class="menu-text">Home</span>
                                     </a>
                                 </li>
                                 <li onmouseover="skillMenuEnter();" onmouseout="skillMenuOut();">
                                     <a href="#skill-section">
                                         <img id="menuSkillID" src="assets/puzzle-32.png" alt="skills" title="skills" width="18" height="18" class="menu-image">
-                                        Skills
+                                        <span class="menu-text">Skills</span>
                                     </a>
                                 </li>
                                 <li onmouseover="projectsMenuEnter();" onmouseout="projectsMenuOut();">
                                     <a href="#projects-section">
                                         <img id="menuProjectsID" src="assets/laptop-metrics-50.png" alt="projects" title="projects" width="22" height="22" class="menu-image project-menu-image">
-                                        Projects
+                                        <span class="menu-text">Projects</span>
                                     </a>
                                 </li>
                                 <li onmouseover="workMenuEnter();" onmouseout="workMenuOut();">
                                     <a href="#work-section">
                                         <img id="menuWorkID" src="assets/business-32.png" alt="work" title="work" width="18" height="18" class="menu-image">
-                                        Work
+                                        <span class="menu-text">Work</span>
                                     </a>
                                 </li>
                                 <li onmouseover="educationMenuEnter();" onmouseout="educationMenuOut();">
                                     <a href="#education-section">
                                         <img id="menuEducationID" src="assets/book-32.png" alt="education" title="education" width="18" height="18" class="menu-image">
-                                        Education
+                                        <span class="menu-text">Education</span>
                                     </a>
-                                </li>                               
+                                </li>
+                                <li onmouseover="contactMenuEnter();" onmouseout="contactMenuOut();">
+                                    <a href="#contact-section">
+                                        <img id="menuContactID" src="assets/phone-50.png" alt="contact" title="contact" width="18" height="18" class="menu-image">
+                                        <span class="menu-text">Contact</span>
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
 
@@ -90,13 +96,13 @@
 
                 <main>
                     <section id="skill-section" class="row g-0 skill-main-section">
-                        <div class="col-lg-4 col-md-3 skill-items-header">
+                        <div class="col-lg-4 col-md-3 col-sm-12 skill-items-header">
                             <h1>
                                 <img src="assets/puzzle-128.png" alt="code-dev" title="developing" class="section-header-photo" width="64" height="64">
                                 Skills
                             </h1>
                         </div>
-                        <div class="col-lg-8 col-md-9 skill-items-content">
+                        <div class="col-lg-8 col-md-9 col-sm-12 skill-items-content">
                             <ul id="tag-cloud" class="skill-cloud"></ul>
 
                         </div>
@@ -109,7 +115,7 @@
                         </h1>
 
                         <section class="row g-0 projects-items-wrap">
-                            <div class="col-6 image-frame-wrap">
+                            <div class="col-lg-6 col-md-7 col-sm-12 image-frame-wrap">
                                 <div class="image-frame">
                                     <a href="#dashboardModal" data-bs-toggle="modal" data-bs-target="#dashboardModal">
                                         <img src="assets/Dashboard.png" alt="Dashboard" title="Dashboard" width="95%">
@@ -118,7 +124,7 @@
                                 <img id="menuImageID" src="assets/tablet-zoom-64.png" alt="expand" title="Expand" width="25" height="25" 
                                                         class="modal-expand-image" onclick="toggleDashboardImageModal();">
                             </div>
-                            <div class="col-6">
+                            <div class="col-lg-6 col-md-5 col-sm-12">
                                 <div class="projects-items-header">
                                     <h3>Network Management System (NMS)</h3>
                                 </div>
@@ -137,7 +143,7 @@
                             </div>
                         </section>
                         <section class="row g-0 projects-items-wrap">
-                            <div class="col-6 image-frame-wrap">
+                            <div class="col-lg-6 col-md-7 col-sm-12 image-frame-wrap">
                                 <div class="image-frame">
                                     <a href="#spectrumModal" data-bs-toggle="modal" data-bs-target="#spectrumModal">
                                         <img src="assets/SpectrumRecorder.png" alt="SpectrumRecorder" title="SpectrumRecorder" width="95%">
@@ -146,7 +152,7 @@
                                 <img id="menuImageID" src="assets/tablet-zoom-64.png" alt="expand" title="Expand" width="25" height="25" 
                                                         class="modal-expand-image" onclick="toggleSpectrumImageModal();">
                             </div>
-                            <div class="col-6">
+                            <div class="col-lg-6 col-md-5 col-sm-12">
                                 <div class="projects-items-header">
                                     <h3>Spectrum Analyzer Online Monitoring</h3>
                                     <h3>Spectrum Analyzer Offline Player </h3>
@@ -175,13 +181,13 @@
                         </h1>
 
                         <section class="row g-0 work-items-wrap">
-                            <div class="work-items-header col-3">
+                            <div class="work-items-header col-xl-3 col-lg-3 col-md-12 col-sm-12">
                                 <h3>Frontend Developer</h3>
                                 <h3>ISC (VSAT Group)
                                     <div>2018 - CURRENT</div>
                                 </h3>
                             </div>
-                            <div class="work-items-content col-9">
+                            <div class="work-items-content col-xl-9 col-lg-9 col-md-12 col-sm-12">
                                 <h3>Network Management System (NMS)</h3>
                                 <div class="row g-0">
                                     <span class="col-12">
@@ -227,13 +233,13 @@
                         </section>
 
                         <section class="row g-0 work-items-wrap">
-                            <div class="work-items-header col-3">
+                            <div class="work-items-header col-xl-3 col-lg-3 col-md-12 col-sm-12">
                                 <h3>Frontend & Software Consultant</h3>
                                 <h3>ARANUMA
                                     <div>2020 -CURRENT</div>                                        
                                 </h3>
                             </div>
-                            <div class="work-items-content col-9">
+                            <div class="work-items-content col-xl-9 col-lg-9 col-md-12 col-sm-12">
                                 <h3>Industrial IoT Software Solutions</h3>
                                 <div class="row g-0">
                                     <span class="col-12">
@@ -256,13 +262,13 @@
                         </section>
 
                         <section class="row g-0 work-items-wrap">
-                            <div class="work-items-header col-3">
+                            <div class="work-items-header col-xl-3 col-lg-3 col-md-12 col-sm-12">
                                 <h3>Web Developer</h3>
                                 <h3>ISC (VSAT Group)
                                     <div>2014 - 2018</div>
                                 </h3>
                             </div>
-                            <div class="work-items-content col-9">
+                            <div class="work-items-content col-xl-9 col-lg-9 col-md-12 col-sm-12">
                                 <h3>Network Management System - Legacy Version</h3>
                                 <div class="row g-0">
                                     <span class="col-12">
@@ -293,13 +299,13 @@
                         </section>
 
                         <section class="row g-0 work-items-wrap">
-                            <div class="work-items-header col-3">
+                            <div class="work-items-header col-xl-3 col-lg-3 col-md-12 col-sm-12">
                                 <h3>Software Developer</h3>
                                 <h3>ISC (R&D Group)
                                     <div>2013 - 2014</div>
                                 </h3>
                             </div>
-                            <div class="work-items-content col-9">
+                            <div class="work-items-content col-xl-9 col-lg-9 col-md-12 col-sm-12">
                                 <h3>Command-Line Interface for Network Devices</h3>
                                 <div class="row g-0">
                                     <span class="col-12">
@@ -329,14 +335,14 @@
                         </h1>
 
                         <section class="row g-0 education-items-wrap">
-                            <div class="education-items-header col-3">
+                            <div class="education-items-header col-xl-3 col-lg-3 col-md-12 col-sm-12">
                                 <h3>Bachelor of Science in Computer Engineering</h3>
                                 <h3>Amirkabir University of technology
                                     <div>Tehran</div>
                                     <div>2001 - 2007</div>
                                 </h3>
                             </div>
-                            <div class="education-items-content col-9">
+                            <div class="education-items-content col-xl-9 col-lg-9 col-md-12 col-sm-12">
                                 <div class="row g-0">
                                     <span class="col-12">
                                         Thesis: A Low Power Wireless Sensor Network based on IEEE 802.15.4
@@ -350,7 +356,7 @@
                         </section>
 
                         <section class="row g-0 education-items-wrap">
-                            <div class="education-items-header col-3">
+                            <div class="education-items-header col-xl-3 col-lg-3 col-md-12 col-sm-12">
                                 <h3>Visiting Student</h3>
                                 <h3>Deakin University, 
                                     Geelong Campus
@@ -358,7 +364,7 @@
                                     <div>2005 - 2006</div>
                                 </h3>
                             </div>
-                            <div class="education-items-content col-9">
+                            <div class="education-items-content col-xl-9 col-lg-9 col-md-12 col-sm-12">
                                 <div class="row g-0">
                                     <span class="col-12">
                                         Project: Design and implementation of a control system for train and port automation model
@@ -373,7 +379,7 @@
                     </section>
                 </main>
         
-                <footer>
+                <footer id="contact-section">
                     <span class="footer-profile-photo-wrapper">
                         <h3> 
                             Me  

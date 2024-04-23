@@ -639,7 +639,6 @@ ul.skill-cloud a:hover::before {
     .work-main-section {
         font-size: 16px;
     }
-    
 }
 
 .work-main-section h1 {
@@ -734,6 +733,18 @@ ul.skill-cloud a:hover::before {
     background-color: var(--light-color);
 }
 
+@media screen and (max-width: 992px) {
+    .education-main-section {
+        padding: 5vh 4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .education-main-section {
+        font-size: 16px;
+    }
+}
+
 .education-main-section h1 {
     padding: 1rem 0;
 }
@@ -742,6 +753,9 @@ ul.skill-cloud a:hover::before {
     padding: 1rem;
 }
 
+.education-items-header {
+    padding-right: 8px;
+}
 .education-items-header h3:first-of-type {
     font-weight: bold;
 }
@@ -753,6 +767,31 @@ ul.skill-cloud a:hover::before {
 .education-items-header h3:last-of-type div {
     font-size: 1rem;
 }
+
+@media screen and (max-width: 992px) {
+    .education-items-header h3:first-of-type {
+        font-size: 1.4rem;
+    }
+    
+    .education-items-header h3:last-of-type {
+        font-size: 1rem;
+    }
+    
+    .education-items-header h3:last-of-type div {
+        font-size: 0.8rem;
+    }
+}
+
+.education-items-content {
+    padding-left: 0.5rem;
+}
+
+@media screen and (max-width: 992px) {
+    .education-items-content {
+        padding-left: 0;
+    }
+}
+
 
 .education-items-content span:last-of-type {
     color: #211f9d;
